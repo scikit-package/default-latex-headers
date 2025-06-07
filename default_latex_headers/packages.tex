@@ -1,0 +1,31 @@
+% place all figures in a sub-folder called figures, located in the folder where
+% the main latex file is
+
+%Packages
+%
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{comment}
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+
+%get the floats right
+\usepackage[dvips]{epsfig}
+\usepackage{epstopdf}
+\usepackage{graphicx}% Include figure files
+
+%math packages for more advanced math
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{amsfonts}
+
+
+% then when you include the graphics, do not put any path there
+% e.g., \includegraphics[width=0.8\textwidth]{<name>}
+% for a figure called <name>.pdf (or <name>.png, or <name>.jpg...latex will do
+% its best to choose the extension from known image file types).
+%
+% as preference use pdf format files.  These are vector graphics and so produce
+% higher quality images at all scales.
+\graphicspath{ {./figures/} }
